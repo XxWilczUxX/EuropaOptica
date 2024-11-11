@@ -5,6 +5,16 @@ body {
     scroll-snap-type: y mandatory;
 }
 
+h1 {
+    font-size: calc(16px + 5vw);
+    -webkit-text-stroke: 2px black;
+}
+
+h2 {
+    font-size: calc(16px + 3vw);
+    -webkit-text-stroke: 1px black;
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -28,6 +38,10 @@ body {
     scroll-snap-align: start;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Ensure space between top content and buttons */
 }
 
 .main-banner {
@@ -43,8 +57,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: calc(16px + 5vw);
-    -webkit-text-stroke: 2px black;
     /* Add black outline */
     color: white;
     /* Ensure the text color is set */
@@ -55,7 +67,6 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 0;
 }
 
 .glasses {
@@ -63,7 +74,6 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 0;
 }
 
 .custom-lens-section {
@@ -71,7 +81,6 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 0;
 }
 
 .footer {
@@ -109,30 +118,48 @@ body {
     flex: 0 0 20vw;
 }
 
-.main-banner,
-.vision,
-.glasses,
-.custom-lens-section,
-.footer {
-    height: 100vh;
+.content-top,
+.content-bottom {
+    height: 50vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-top {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     scroll-snap-align: start;
-    text-align: center;
-    position: relative;
-    /* Ensure the parent container is positioned relative */
+    /* Snap to the top of the section */
+}
+
+.content-bottom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    scroll-snap-align: end;
+    /* Snap to the bottom of the section */
+}
+
+.content-top h2 {
+    padding-top: 15vh;
 }
 
 .buttons-bottom {
-    position: absolute;
-    bottom: 20px;
-    transform: translateY(80vh);
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 40px;
-    /* Increased gap for more spacing */
+    gap: 10vw;
+    align-self: flex-end;
+    scroll-snap-align: end;
+    padding-bottom: 2.5vh;
 }
 
 .btn-lg {
-    font-size: calc(14px + 0.5vw);
-    padding: calc(5px + 0.2vw) calc(30px + 3vw);
+    font-size: clamp(1.5vh, 1.5vw, 2.5vh);
+    padding: clamp(1vh, 1vh, 2vh) clamp(3vw, 3vw, 5vw);
 }
