@@ -10,11 +10,9 @@ body {
     top: 0;
     width: 100%;
     z-index: 10;
-}
-
-.gradient-bg {
     background: linear-gradient(to bottom, black, transparent);
     color: white;
+    transition: background-color 0.3s ease;
 }
 
 .navbar-nav .nav-link {
@@ -29,7 +27,7 @@ body {
 }
 
 .main-banner {
-    background-image: url('Img/main.png');
+    background-image: url('../Img/main.png');
     background-size: cover;
     background-position: center;
     color: white;
@@ -53,7 +51,7 @@ body {
 }
 
 .glasses {
-    background-image: url('Img/ox.png');
+    background-image: url('../Img/ox.png');
     background-size: cover;
     background-position: center;
     color: white;
