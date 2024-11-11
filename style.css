@@ -1,8 +1,19 @@
-.gradient-bg {
-    background: linear-gradient(to bottom, black, transparent);
-    position: absolute;
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
     width: 100%;
     z-index: 10;
+}
+
+.gradient-bg {
+    background: linear-gradient(to bottom, black, transparent);
     color: white;
 }
 
@@ -10,15 +21,11 @@
     color: white;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .main-banner, .vision, .glasses, .custom-lens-section, .footer {
     height: 100vh;
-    position: relative;
+    scroll-snap-align: start;
     text-align: center;
+    position: relative;
 }
 
 .main-banner {
@@ -27,7 +34,6 @@ body {
     background-position: center;
     color: white;
     padding: 100px 0;
-    z-index: 1;
 }
 
 .main-banner h1 {
@@ -35,7 +41,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: calc(16px + 2vw); /* Scale with resolution */
+    font-size: calc(16px + 2vw);
 }
 
 .vision {
@@ -103,10 +109,10 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Reverted to previous gap size */
+    gap: 20px;
 }
 
 .btn-lg {
-    font-size: calc(14px + 0.5vw); /* Scale with resolution */
-    padding: calc(5px + 0.2vw) calc(30px + 3vw); /* Adjust padding: smaller vertically, larger horizontally, and scalable */
+    font-size: calc(14px + 0.5vw);
+    padding: calc(5px + 0.2vw) calc(30px + 3vw);
 }
