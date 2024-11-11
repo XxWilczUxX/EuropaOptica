@@ -19,7 +19,11 @@ body {
     color: white;
 }
 
-.main-banner, .vision, .glasses, .custom-lens-section, .footer {
+.main-banner,
+.vision,
+.glasses,
+.custom-lens-section,
+.footer {
     height: 100vh;
     scroll-snap-align: start;
     text-align: center;
@@ -39,7 +43,11 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: calc(16px + 2vw);
+    font-size: calc(16px + 5vw);
+    -webkit-text-stroke: 2px black;
+    /* Add black outline */
+    color: white;
+    /* Ensure the text color is set */
 }
 
 .vision {
@@ -101,13 +109,27 @@ body {
     flex: 0 0 20vw;
 }
 
+.main-banner,
+.vision,
+.glasses,
+.custom-lens-section,
+.footer {
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+    /* Ensure the parent container is positioned relative */
+}
+
 .buttons-bottom {
     position: absolute;
     bottom: 20px;
+    transform: translateY(80vh);
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+    /* Increased gap for more spacing */
 }
 
 .btn-lg {
