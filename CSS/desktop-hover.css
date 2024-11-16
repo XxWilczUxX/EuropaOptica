@@ -3,10 +3,18 @@
 }
 
 .dropdown-content {
-    display: none;
+    display: block;
     position: fixed;
-    height: 40vh;
+    height: 0;
     width: 100%;
     background-color: white;
     z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.dropdown-content.show {
+    height: 30vh;
+    opacity: 1;
 }
