@@ -6,6 +6,7 @@ dropdownContent.style.top = `${navbar.offsetHeight}px`;
 
 navItems.forEach(item => {
     item.firstChild.style.color = 'lightgray';
+
     item.addEventListener('mouseover', () => { // Hovering
         navbar.style.background = 'none';
         navbar.style.backgroundColor = 'white';
