@@ -1,12 +1,7 @@
-.navbar-nav .nav-link {
-    color: white;
-    transition: color 0.3s ease;
-}
-
 .navbar:hover {
     background: none;
     background-color: white;
-    
+
 }
 
 .navbar:hover .nav-link {
@@ -24,20 +19,36 @@
     top: 100%;
     left: 0;
     width: 100%;
-    height: 40vh; /* White area under the navbar */
+    height: 40vh;
+    /* White area under the navbar */
     background-color: white;
-    z-index: -1; /* Ensure the white area is behind other elements */
+    z-index: -1;
+    /* Ensure the white area is behind other elements */
     transition: background-color 0.3s ease;
 }
 
 @keyframes fadeIn {
-    0% { background-color: transparent; height: 0vh; }
-    100% { background-color: white; height: 40vh; }
+    0% {
+        background-color: transparent;
+        height: 0vh;
+    }
+
+    100% {
+        background-color: white;
+        height: 40vh;
+    }
 }
 
 @keyframes fadeOut {
-    0% { background-color: white; height: 40vh; }
-    100% { background-color: transparent; height: 0vh; }
+    0% {
+        background-color: white;
+        height: 40vh;
+    }
+
+    100% {
+        background-color: transparent;
+        height: 0vh;
+    }
 }
 
 .navbar:hover::after {
