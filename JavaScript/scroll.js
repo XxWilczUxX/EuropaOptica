@@ -14,5 +14,5 @@ window.addEventListener('scroll', () => {
             top: scrollTarget,
             behavior: 'smooth'
         });
-    }, 200);
+    }, 500);
 });
