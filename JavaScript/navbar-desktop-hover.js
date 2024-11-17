@@ -17,7 +17,11 @@ navItems.forEach(item => {
 
         dropdownContent.classList.add('show');
     });
-    item.addEventListener('mouseout', () => { // Not hovering
+
+});
+
+dropdownContent.addEventListener('mouseout', () => { // Not hovering
+    if (!dropdownContent.matches(':hover') && !navbar.matches(':hover')) {
         navbar.style.backgroundColor = 'none';
         navbar.style.background = 'linear-gradient(to bottom, black, transparent)';
         navItems.forEach(element => {
@@ -25,5 +29,5 @@ navItems.forEach(item => {
         });
 
         dropdownContent.classList.remove('show');
-    });
+    }
 });
