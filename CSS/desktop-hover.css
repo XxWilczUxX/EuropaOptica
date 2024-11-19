@@ -23,13 +23,19 @@
     opacity: 1;
 }
 
-.dropdown-content>a {
+.dropdown-content a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-height: 100%;
     margin: auto 1vw;
+    text-decoration: none;
+    color: slategray;
+}
+
+.dropdown-content a:hover {
+    color: black;
 }
 
 .image-label-container {
