@@ -41,12 +41,12 @@ a {
     transition: color 0.3s ease;
 }
 
-.nav-item > div {
+.nav-item>div {
     display: none;
 }
 
 .main-banner,
-.vision,
+.cybernetics,
 .glasses,
 .custom-lens-section,
 .footer {
@@ -60,7 +60,7 @@ a {
 }
 
 .main-banner p,
-.vision p,
+.cybernetics p,
 .glasses p,
 .custom-lens-section p {
     font-size: calc(16px + 0.75vw);
@@ -83,7 +83,26 @@ a {
     color: white;
 }
 
-/* shared.css */
+.cybernetics {
+    background-image: url('../Img/cybernetics.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.glasses {
+    background-image: url('../Img/ox.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.custom-lens-section {
+    background-image: url('../Img/custom-lens.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
 
 .btn-lg {
     font-size: clamp(1.5vh, 1.5vw, 2.5vh);
