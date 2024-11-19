@@ -5,15 +5,21 @@ const dropdownContent = document.getElementById('dropdown-content');
 dropdownContent.style.top = `${navbar.offsetHeight}px`;
 
 navItems.forEach(item => {
-    item.firstChild.style.color = 'lightgray';
+    item.children[0].style.color = 'lightgray';
 
     item.addEventListener('mouseover', () => { // Hovering
         navbar.style.background = 'none';
         navbar.style.backgroundColor = 'white';
         navItems.forEach(element => {
-            element.firstChild.style.color = 'darkslategray';
+            element.children[0].style.color = 'darkslategray';
         });
-        item.firstChild.style.color = 'black';
+        item.children[0].style.color = 'black';
+
+        let contents = item.children[1].children;
+        dropdownContent.innerHTML = '';
+        Array.from(contents).forEach(element => {
+            dropdownContent.appendChild(element.cloneNode(true));
+        });
 
         dropdownContent.classList.add('show');
     });
@@ -25,7 +31,7 @@ dropdownContent.addEventListener('mouseout', () => { // Not hovering
         navbar.style.backgroundColor = 'none';
         navbar.style.background = 'linear-gradient(to bottom, black, transparent)';
         navItems.forEach(element => {
-            element.firstChild.style.color = 'lightgray';
+            element.children[0].style.color = 'lightgray';
         });
 
         dropdownContent.classList.remove('show');
