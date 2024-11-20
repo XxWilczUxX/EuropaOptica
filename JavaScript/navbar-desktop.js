@@ -1,8 +1,8 @@
-const navbar = document.getElementById('navbar');
-const navItems = navbar.querySelectorAll('.nav-item');
+const navbarDesktop = document.getElementById('navbar-desktop');
+const navDesktopItems = navbarDesktop.querySelectorAll('.nav-item');
 
 const dropdownContent = document.getElementById('dropdown-content');
-dropdownContent.style.top = `${navbar.offsetHeight}px`;
+dropdownContent.style.top = `${navbarDesktop.offsetHeight}px`;
 
 const attachSearchListeners = (element) => {
     if (element.id === 'search-form') {
@@ -25,19 +25,21 @@ const attachSearchListeners = (element) => {
 
 };
 
-navItems.forEach(item => {
+navDesktopItems.forEach(item => {
     item.children[0].style.color = 'lightgray';
 
     item.addEventListener('mouseover', () => { // Hovering
-        navbar.style.background = 'none';
-        navbar.style.backgroundColor = 'white';
-        navItems.forEach(element => {
+        navbarDesktop.style.background = 'none';
+        navbarDesktop.style.backgroundColor = 'white';
+        navDesktopItems.forEach(element => {
             element.children[0].style.color = 'darkslategray';
         });
         item.children[0].style.color = 'black';
 
         let contents = item.children[1].children;
         dropdownContent.innerHTML = '';
+        dropdownContent.style.top = `${navbarDesktop.offsetHeight}px`;
+        dropdownContent.style.height = `auto`;
         Array.from(contents).forEach(element => {
             const clonedElement = element.cloneNode(true);
             dropdownContent.appendChild(clonedElement);
@@ -49,10 +51,10 @@ navItems.forEach(item => {
 });
 
 dropdownContent.addEventListener('mouseout', () => { // Not hovering
-    if (!dropdownContent.matches(':hover') && !navbar.matches(':hover')) {
-        navbar.style.backgroundColor = 'none';
-        navbar.style.background = 'linear-gradient(to bottom, black, transparent)';
-        navItems.forEach(element => {
+    if (!dropdownContent.matches(':hover') && !navbarDesktop.matches(':hover')) {
+        navbarDesktop.style.backgroundColor = 'none';
+        navbarDesktop.style.background = 'linear-gradient(to bottom, black, transparent)';
+        navDesktopItems.forEach(element => {
             element.children[0].style.color = 'lightgray';
         });
 
