@@ -171,3 +171,7 @@ button.nav-link {
 .search-form>.input-group>* {
     height: 5vh;
 }
+
+.navbar-mobile {
+    display: none;
+}

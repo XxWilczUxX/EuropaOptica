@@ -20,6 +20,7 @@
     <link href="CSS/glitch-font.css" rel="stylesheet">
     <link href="CSS/desktop.css" rel="stylesheet">
     <link href="CSS/desktop-hover.css" rel="stylesheet">
+    <link href="CSS/mobile.css" rel="stylesheet">
 
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -27,7 +28,7 @@
 </head>
 
 <body>
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark navbar-desktop">
         <div class="container-fluid">
             <a class="navbar-brand logo-size" href="#"><img src="https://via.placeholder.com/150x40" alt="Logo"
                     height="40"></a>
@@ -217,6 +218,37 @@
             </ul>
         </div>
     </nav>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark navbar-mobile">
+        <div class="container-fluid">
+            <ul class="navbar-nav d-flex flex-row justify-content-between buttons-size w-100"></ul>
+            <li class="nav-item">
+                <button class="btn nav-link" type="button">
+                    <span class="material-icons">search</span>
+                </button>
+                <div id="contents">
+                    <form class="search-form" id="search-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="search-input" placeholder="Search...">
+                        </div>
+                        <div id="search-results" class="search-results mt-2">
+                            <!-- Search results will be displayed here -->
+                        </div>
+                    </form>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="navbar-brand logo-size mx-auto" href="#"><img src="https://via.placeholder.com/150x40"
+                        alt="Logo" height="50vh"></a>
+            </li>
+            <li class="nav-item">
+                <button class="btn nav-link" type="button">
+                    <span class="material-icons">menu</span>
+                </button>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
     <div id="dropdown-content" class="dropdown-content">
     </div>
 
