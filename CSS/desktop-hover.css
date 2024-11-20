@@ -1,3 +1,7 @@
+/*
+    TODO: Tidy up it, because not everyting here is desktop only.
+*/
+
 .navbar {
     transition: background-color 0.3s ease;
 }
