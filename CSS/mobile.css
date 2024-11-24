@@ -1,11 +1,8 @@
-@media (max-width: 768px) {
-    .navbar-desktop {
-        display: none;
-    }
+.navbar-mobile {
+    display: flex;
+}
 
-    .navbar-mobile {
-        display: flex;
-    }
+@media (max-width: 768px) {
 
     .navbar-mobile button,
     .navbar-mobile button:hover {

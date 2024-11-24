@@ -40,6 +40,7 @@ navDesktopItems.forEach(item => {
         dropdownContent.innerHTML = '';
         dropdownContent.style.top = `${navbarDesktop.offsetHeight}px`;
         dropdownContent.style.height = `auto`;
+        dropdownContent.style.minHeight = `20vh`;
         Array.from(contents).forEach(element => {
             const clonedElement = element.cloneNode(true);
             dropdownContent.appendChild(clonedElement);
