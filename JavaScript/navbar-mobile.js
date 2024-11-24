@@ -3,6 +3,10 @@ const navMobileItems = navbarMobile.querySelectorAll('.nav-item');
 
 let isDown = false;
 
+const recalculateDropdown = () => {
+
+};
+
 const handleInsideClick = (item) => {
     if (item.classList.contains('open')) {
         item.children[1].style.display = 'none';
@@ -14,14 +18,8 @@ const handleInsideClick = (item) => {
         item.children[0].style.backgroundColor = 'lightgray';
         item.classList.add('open');
     }
-    let contents = dropdownContent.children;
 
-    Array.from(contents).forEach(element => {
-        let n = 0;
-        n += element.offsetHeight;
-        dropdownContent.style.paddingBottom = `calc(${dropdownContent.offsetHeight}px - ${dropdownContent.style.top} - ${n}px)`;
-        console.log(`calc(${dropdownContent.offsetHeight} - ${dropdownContent.style.top} - ${n})`);
-    });
+    recalculateDropdown();
 }
 
 const handleMobileClick = (item) => {
@@ -62,14 +60,7 @@ const handleMobileClick = (item) => {
         });
     });
 
-    contents = dropdownContent.children;
-
-    Array.from(contents).forEach(element => {
-        let n = 0;
-        n += element.offsetHeight;
-        dropdownContent.style.paddingBottom = `calc(${dropdownContent.offsetHeight}px - ${dropdownContent.style.top} - ${n}px)`;
-        console.log(`calc(${dropdownContent.offsetHeight} - ${dropdownContent.style.top} - ${n})`);
-    });
+    recalculateDropdown();
 
     dropdownContent.classList.add('show')
     isDown = true;
