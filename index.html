@@ -19,12 +19,12 @@
     <link href="CSS/tomorrow-font.css" rel="stylesheet">
     <link href="CSS/glitch-font.css" rel="stylesheet">
 
+    <link href="CSS/navbar.css" rel="stylesheet">
     <link href="CSS/footer.css" rel="stylesheet">
 
 
     <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 
 <body>
@@ -370,6 +370,82 @@
         </div>
     </nav> 
  -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-flex">
+        <a class="navbar-brand" href="#"><img src="https://via.placeholder.com/150x40" alt="Logo"></a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto justify-content-between">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cybernetics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Optics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conctact us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-nav mx-auto">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="material-symbols-outlined">help</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="material-symbols-outlined">language</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="material-symbols-outlined">account_circle</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar d-lg-none mobile">
+        <a class="navbar-brand" href="#"><img src="https://via.placeholder.com/150x40" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="material-symbols-outlined navbar-toggler-icon">menu</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav primary-links">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cybernetics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Optics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conctact us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mt-2 secondary-links">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="material-symbols-outlined">help</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="material-symbols-outlined">language</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="material-symbols-outlined">account_circle</span></a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
     <div id="dropdown-content" class="dropdown-content">
     </div>
 
@@ -383,7 +459,7 @@
         <div class="row product-section cybernetics">
             <div class="row head text-center tomorrow-medium">
                 <h2 class="display-sm-2 display-md-2 display-lg-2">Oracle 3 Pro</h2>
-                <p class="lead tomorrow-regular col-12 col-md-4">~0% latency starting at $12,000</p>
+                <p class="lead tomorrow-regular col-12 col-mb-4">~0% latency starting at $12,000</p>
             </div>
             <div class="row tail text-center">
                 <div class="col-12 col-md-4 mb-3 mb-md-0">
@@ -398,7 +474,7 @@
         <div class="row product-section glasses">
             <div class="row head text-center tomorrow-medium">
                 <h2 class="display-sm-2 display-md-2 display-lg-2">Ox™</h2>
-                <p class="lead tomorrow-regular col-12 col-md-4">pairing support starting at $4,500</p>
+                <p class="lead tomorrow-regular col-12 col-mb-4">pairing support starting at $4,500</p>
             </div>
             <div class="row tail text-center">
                 <div class="col-12 col-md-4 mb-3 mb-md-0">
@@ -413,7 +489,7 @@
         <div class="row product-section custom-lens-section">
             <div class="row head text-center tomorrow-medium">
                 <h2 class="display-sm-2 display-md-2 display-lg-2">Custom lens</h2>
-                <p class="lead tomorrow-regular col-12 col-md-4">Price is calculated per order</p>
+                <p class="lead tomorrow-regular col-12 col-mb-4">Price is calculated per order</p>
             </div>
             <div class="row tail text-center">
                 <div class="col-12 col-md-4 mb-3 mb-md-0">

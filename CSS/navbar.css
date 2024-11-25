@@ -1,0 +1,80 @@
+/* Shared */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: linear-gradient(to bottom, black, transparent);
+    transition: background 0.3s ease, height 0.3s ease;
+}
+
+.navbar span,
+.navbar a {
+    color: whitesmoke;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+.navbar>a,
+.navbar>button>span {
+    display: flex;
+    justify-content: center;
+}
+
+/* Desktop */
+
+
+
+/* Mobile */
+
+.mobile.navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 0;
+    transition: height 0.3s ease;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.mobile.navbar-collapse a,
+.mobile.navbar-collapse span {
+    color: rgba(255, 255, 255, 0);
+    transition: color 0.3s ease;
+}
+
+.mobile.navbar-expanded {
+    background: rgba(255, 255, 255, 1);
+    transition: background 0.5s ease, height 0.3s ease;
+}
+
+.mobile.navbar-expanded span,
+.mobile.navbar-expanded a {
+    color: #202020;
+}
+
+.mobile span,
+.mobile a {
+    font-size: 1.5rem;
+}
+
+.mobile>button>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile.primary-links {
+    padding-top: 5vh;
+}
+
+.mobile.secondary-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    transition: all 0.3s ease;
+    border-top: #202020 solid 1px;
+    padding-top: 1vh;
+}
