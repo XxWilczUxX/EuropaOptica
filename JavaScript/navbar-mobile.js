@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+const mobileNavbarInit = () => {
     const mobileNavbarHeight = document.querySelector('.mobile').offsetHeight;
     var navbarToggler = document.querySelector('.navbar-toggler');
     var navbarCollapse = document.querySelector('#navbarNav');
@@ -37,4 +37,4 @@ document.addEventListener('DOMContentLoaded', function () {
             item.classList.toggle('active');
         });
     });
-});
+}
