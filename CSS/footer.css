@@ -1,0 +1,96 @@
+.footer {
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    max-height: 200vh;
+}
+
+.footer .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.footer .container {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: auto 0;
+}
+
+.footer .col-md-3 {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.footer .list-inline {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.footer .list-inline-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .list-inline-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer h5 {
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.footer p {
+    color: #F2F2F2;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.Maps {
+    margin-top: 12.5vh;
+    background-color: darkgray;
+    align-items: center;
+}
+
+@media (max-width: 767.98px) {
+
+    .maps-sm,
+    .footer .tail {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .maps-md {
+        height: 45vh;
+    }
+
+    .footer .tail {
+        height: unset;
+    }
+}
+
+@media (min-width: 1200px) {
+    .maps-lg {
+        height: 40vh;
+    }
+
+    .footer .tail {
+        height: unset;
+    }
+}

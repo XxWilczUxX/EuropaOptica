@@ -1,64 +1,52 @@
-const navbarDesktop = document.getElementById('navbar-desktop');
-const navDesktopItems = navbarDesktop.querySelectorAll('.nav-item');
+const desktopNavbarInit = () => {
+    var navbar = document.querySelectorAll('.navbar')[0];
+    const navbarHeight = navbar.offsetHeight;
+    const desktopNavItems = navbar.querySelectorAll('.nav-item');
+    const desktopPrimaryLinks = navbar.querySelector('.primary-links').querySelectorAll('.navbar-nav .nav-item');
 
-const dropdownContent = document.getElementById('dropdown-content');
-dropdownContent.style.top = `${navbarDesktop.offsetHeight}px`;
+    var dropdownContent = document.querySelector('#dropdown-content');
 
-const attachSearchListeners = (element) => {
-    if (element.id === 'search-form') {
-        element.addEventListener('submit', submit => {
-            submit.preventDefault();
-            const searchInput = element.querySelector('#search-input');
-            console.log('Search submitted:', searchInput.value);
+    dropdownContent.style.top = `${navbarHeight - 1}px`;
+
+    desktopPrimaryLinks.forEach(link => {
+        link.addEventListener('mouseover', () => {
+            navbar.classList.add('navbar-expanded');
+            dropdownContent.classList.add('show');
+
+            dropdownContent.innerHTML = '';
+
+            var additionalLinks = link.querySelector('.additional-links').innerHTML;
+            dropdownContent.innerHTML = additionalLinks;
+
+
         });
 
-        const searchInput = element.querySelector('#search-input');
-        if (searchInput.id === 'search-input') {
-            element.addEventListener('input', input => {
-                const query = input.target.value.toLowerCase();
-                const searchResults = document.getElementById('search-results');
-                console.log('Search input:', query);
+        link.addEventListener('mouseleave', () => {
+            setTimeout(() => {
+                let match = false;
+                desktopPrimaryLinks.forEach(link => {
+                    if (link.matches(':hover')) {
+                        match = true;
+                    }
+                });
+                if (!match && !dropdownContent.matches(':hover')) {
+                    navbar.classList.remove('navbar-expanded');
+                    dropdownContent.classList.remove('show');
+                }
+            }, 150);
+        });
+
+        dropdownContent.addEventListener('mouseleave', () => {
+            let match = false;
+            desktopPrimaryLinks.forEach(link => {
+                if (link.matches(':hover')) {
+                    match = true;
+                }
             });
-        }
-    }
-
-
-};
-
-navDesktopItems.forEach(item => {
-    item.children[0].style.color = 'lightgray';
-
-    item.addEventListener('mouseover', () => { // Hovering
-        navbarDesktop.style.background = 'none';
-        navbarDesktop.style.backgroundColor = 'white';
-        navDesktopItems.forEach(element => {
-            element.children[0].style.color = 'darkslategray';
+            if (!match) {
+                navbar.classList.remove('navbar-expanded');
+                dropdownContent.classList.remove('show');
+            }
         });
-        item.children[0].style.color = 'black';
-
-        let contents = item.children[1].children;
-        dropdownContent.innerHTML = '';
-        dropdownContent.style.top = `${navbarDesktop.offsetHeight}px`;
-        dropdownContent.style.height = `auto`;
-        dropdownContent.style.minHeight = `20vh`;
-        Array.from(contents).forEach(element => {
-            const clonedElement = element.cloneNode(true);
-            dropdownContent.appendChild(clonedElement);
-            attachSearchListeners(clonedElement);
-        });
-
-        dropdownContent.classList.add('show');
     });
-});
-
-dropdownContent.addEventListener('mouseout', () => { // Not hovering
-    if (!dropdownContent.matches(':hover') && !navbarDesktop.matches(':hover')) {
-        navbarDesktop.style.backgroundColor = 'none';
-        navbarDesktop.style.background = 'linear-gradient(to bottom, black, transparent)';
-        navDesktopItems.forEach(element => {
-            element.children[0].style.color = 'lightgray';
-        });
-
-        dropdownContent.classList.remove('show');
-    }
-});
+}

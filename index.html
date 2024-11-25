@@ -18,422 +18,251 @@
     <link href="CSS/shared.css" rel="stylesheet">
     <link href="CSS/tomorrow-font.css" rel="stylesheet">
     <link href="CSS/glitch-font.css" rel="stylesheet">
-    <link href="CSS/desktop.css" rel="stylesheet">
-    <link href="CSS/desktop-hover.css" rel="stylesheet">
-    <link href="CSS/mobile.css" rel="stylesheet">
+
+    <link href="CSS/navbar.css" rel="stylesheet">
+    <link href="CSS/footer.css" rel="stylesheet">
+
 
     <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 
 <body>
-    <nav id="navbar-desktop" class="navbar navbar-expand-lg navbar-dark  d-none d-lg-block navbar-desktop">
-        <div class="container-fluid">
-            <a class="navbar-brand logo-size" href="#"><img src="https://via.placeholder.com/150x40" alt="Logo"
-                    height="40"></a>
-            <ul class="navbar-nav mx-auto">
+
+    <nav class="navbar navbar-expand-lg d-none d-lg-flex desktop">
+        <a class="navbar-brand" href="#"><img src="https://via.placeholder.com/150x40" alt="Logo"></a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto justify-content-between primary-links text-center">
                 <li class="nav-item">
-                    <a class="nav-link text" href="#">About us</a>
-                    <div id="contents">
-                        <a href="#" class="dropdown-text">
-                            <h3>About us</h3>
-                            <p>Description</p>
-                        </a>
-                        <a href="#" class="dropdown-text">
-                            <h3>Our mission</h3>
-                            <p>Description</p>
-                        </a>
-                        <a href="#" class="dropdown-text">
-                            <h3>Our history</h3>
-                            <p>Description</p>
-                        </a>
-                        <a href="#" class="dropdown-text">
-                            <h3>Services</h3>
-                            <p>Description</p>
-                        </a>
-                        <a href="#" class="dropdown-text">
-                            <h3>Find us</h3>
-                            <p>Description</p>
-                        </a>
-                        <a href="#" class="dropdown-text">
-                            <h3>Contact us</h3>
-                            <p>Description</p>
-                        </a>
+                    <a class="nav-link" href="#">About Us</a>
+                    <div class="additional-links">
+                        <a class="nav-link" href="#">Our Mission</a>
+                        <a class="nav-link" href="#">Our History</a>
+                        <a class="nav-link" href="#">Our Team</a>
+                        <a class="nav-link" href="#">Careers</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link img" href="#">Cybernetics</a>
-                    <div id="contents">
-                        <a href="#" class="dropdown-image">
-                            <div class="image-label-container">
-                                <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                <p>Oracle Series</p>
-                            </div>
-                        </a>
-                        <a href="#" class="dropdown-image">
-                            <div class="image-label-container">
-                                <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                <p>Sentry Series</p>
-                            </div>
-                        </a>
-                        <a href="#" class="dropdown-image">
-                            <div class="image-label-container">
-                                <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                <p>Stalker Series</p>
-                            </div>
-                        </a>
-                        <a href="#" class="dropdown-image">
-                            <div class="image-label-container">
-                                <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                <p>Doomsayer Series</p>
-                            </div>
-                        </a>
+                    <a class="nav-link" href="#">Cybernetics</a>
+                    <div class="additional-links">
+                        <a class="nav-link img" href="#">Oracle Series</a>
+                        <a class="nav-link img" href="#">Sentry Series</a>
+                        <a class="nav-link img" href="#">Stalker Series</a>
+                        <a class="nav-link img" href="#">Doomsayer Series</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link img" href="#">Optics</a>\
-                    <div id="contents">
-                        <a href="#" class="dropdown-image">
-                            <div class="image-label-container">
-                                <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                <p>Glasses</p>
-                            </div>
-                        </a>
-                        <a href="#" class="dropdown-image">
-                            <div class="image-label-container">
-                                <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                <p>Contact Lenses</p>
-                            </div>
-                        </a>
-                        <a href="#" class="dropdown-image">
-                            <div class="image-label-container">
-                                <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                <p>Custom Lenses</p>
-                            </div>
-                        </a>
+                    <a class="nav-link" href="#">Optics</a>
+                    <div class="additional-links">
+                        <a class="nav-link img" href="#">Glasses</a>
+                        <a class="nav-link img" href="#">Contact Lenses</a>
+                        <a class="nav-link img" href="#">Custom Lenses</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text" href="#">Shop</a>
-                    <div id="contents">
-                        <a href="#" class="dropdown-image">
-                            <div class="image-label-container">
-                                <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                <p>Category 1</p>
-                            </div>
-                        </a>
-                        <a href="#" class="dropdown-image">
-                            <div class="image-label-container">
-                                <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                <p>Category 2</p>
-                            </div>
-                        </a>
-                        <a href="#" class="dropdown-image">
-                            <div class="image-label-container">
-                                <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                <p>Category 3</p>
-                            </div>
-                        </a>
-                        <a href="#" class="dropdown-image">
-                            <div class="image-label-container">
-                                <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                <p>Category 4</p>
-                            </div>
-                        </a>
-                        <a href="#" class="dropdown-image">
-                            <div class="image-label-container">
-                                <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                <p>Category 5</p>
-                            </div>
-                        </a>
-                        <a href="#" class="dropdown-image">
-                            <div class="image-label-container">
-                                <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                <p>Category 6</p>
-                            </div>
-                        </a>
-                        <a href="#" class="dropdown-image">
-                            <div class="image-label-container">
-                                <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                <p>Category 7</p>
-                            </div>
-                        </a>
-                        <a href="#" class="dropdown-image">
-                            <div class="image-label-container">
-                                <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                <p>Category 8</p>
-                            </div>
-                        </a>
+                    <a class="nav-link" href="#">Shop</a>
+                    <div class="additional-links">
+                        <a class="nav-link" href="#">Category 1</a>
+                        <a class="nav-link" href="#">Category 2</a>
+                        <a class="nav-link" href="#">Category 3</a>
+                        <a class="nav-link" href="#">Category 4</a>
+                        <a class="nav-link" href="#">Category 5</a>
+                        <a class="nav-link" href="#">Category 6</a>
+                        <a class="nav-link" href="#">Category 7</a>
+                        <a class="nav-link" href="#">Category 8</a>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conctact Us</a>
                 </li>
             </ul>
-            <ul class="navbar-nav justify-content-end buttons-size">
+        </div>
+        <div class="navbar-nav mx-auto secondary-links">
+            <ul class="navbar-nav">
                 <li class="nav-item">
-                    <button class="btn nav-link" type="button">
-                        <span class="material-icons">account_circle</span>
-                    </button>
-                    <div id="contents">
-                        <form class="login-form p-3" id="login-form">
-                            <div class="form-group">
-                                <label for="username">E-mail</label>
-                                <input type="text" class="form-control" id="username" placeholder="Enter e-mail">
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" placeholder="Enter password">
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block">Login</button>
-                        </form>
-                    </div>
+                    <a class="nav-link" href="#"><span class="material-symbols-outlined">help</span></a>
                 </li>
                 <li class="nav-item">
-                    <button class="btn nav-link" type="button">
-                        <span class="material-icons">search</span>
-                    </button>
-                    <div id="contents">
-                        <form class="search-form" id="search-form">
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="search-input" placeholder="Search...">
-                            </div>
-                            <div id="search-results" class="search-results mt-2">
-                                <!-- Search results will be displayed here -->
-                            </div>
-                        </form>
-                    </div>
+                    <a class="nav-link" href="#"><span class="material-symbols-outlined">language</span></a>
                 </li>
                 <li class="nav-item">
-                    <button class="btn nav-link" type="button">
-                        <span class="material-icons">language</span>
-                    </button>
-                    <div id="contents">
-                        <a href="#" class="dropdown-text">English</a>
-                        <a href="#" class="dropdown-text">Polski</a>
-                        <a href="#" class="dropdown-text">Español</a>
-                        <a href="#" class="dropdown-text">Français</a>
-                        <a href="#" class="dropdown-text">Deutsch</a>
-                        <a href="#" class="dropdown-text">中文</a>
-                    </div>
+                    <a class="nav-link" href="#"><span class="material-symbols-outlined">account_circle</span></a>
                 </li>
             </ul>
         </div>
     </nav>
-    <nav id="navbar-mobile" class="navbar d-lg-none navbar-dark navbar-mobile">
-        <div class="container-fluid">
-            <ul class="navbar-nav d-flex flex-row justify-content-between buttons-size w-100"></ul>
-            <li class="nav-item">
-                <button class="btn nav-link" type="button">
-                    <span class="material-icons">search</span>
-                </button>
-                <div id="contents">
-                    <form class="search-form" id="search-form">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="search-input" placeholder="Search...">
-                        </div>
-                        <div id="search-results" class="search-results mt-2">
-                            <!-- Search results will be displayed here -->
-                        </div>
-                    </form>
-                </div>
-            </li>
-            <a class="navbar-brand logo-size mx-auto" href="#"><img src="https://via.placeholder.com/150x40" alt="Logo"
-                    height="50vh"></a>
-            <li class="nav-item">
-                <button class="btn nav-link" type="button">
-                    <span class="material-icons">menu</span>
-                </button>
-                <div id="contents">
-                    <div class="nav-item">
-                        <p class="nav-link text">About us</p>
-                        <div id="contents">
-                            <a href="#" class="dropdown-text">
-                                <h3>About us</h3>
-                                <p>Description</p>
-                            </a>
-                            <a href="#" class="dropdown-text">
-                                <h3>Our mission</h3>
-                                <p>Description</p>
-                            </a>
-                            <a href="#" class="dropdown-text">
-                                <h3>Our history</h3>
-                                <p>Description</p>
-                            </a>
-                            <a href="#" class="dropdown-text">
-                                <h3>Services</h3>
-                                <p>Description</p>
-                            </a>
-                            <a href="#" class="dropdown-text">
-                                <h3>Find us</h3>
-                                <p>Description</p>
-                            </a>
-                            <a href="#" class="dropdown-text">
-                                <h3>Contact us</h3>
-                                <p>Description</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nav-item">
-                        <p class="nav-link text">Cybernetics</p>
-                        <div id="contents">
-                            <a href="#" class="dropdown-image">
-                                <div class="image-label-container">
-                                    <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                    <p>Oracle Series</p>
-                                </div>
-                            </a>
-                            <a href="#" class="dropdown-image">
-                                <div class="image-label-container">
-                                    <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                    <p>Sentry Series</p>
-                                </div>
-                            </a>
-                            <a href="#" class="dropdown-image">
-                                <div class="image-label-container">
-                                    <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                    <p>Stalker Series</p>
-                                </div>
-                            </a>
-                            <a href="#" class="dropdown-image">
-                                <div class="image-label-container">
-                                    <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                    <p>Doomsayer Series</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nav-item">
-                        <p class="nav-link text">Optics</p>
-                        <div id="contents">
-                            <a href="#" class="dropdown-image">
-                                <div class="image-label-container">
-                                    <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                    <p>Glasses</p>
-                                </div>
-                            </a>
-                            <a href="#" class="dropdown-image">
-                                <div class="image-label-container">
-                                    <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                    <p>Contact Lenses</p>
-                                </div>
-                            </a>
-                            <a href="#" class="dropdown-image">
-                                <div class="image-label-container">
-                                    <img src="https://via.placeholder.com/360x200.png" alt="placeholder">
-                                    <p>Custom Lenses</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="nav-item">
-                        <a class="nav-link text" href="#">Shop</a>
-                        <div id="contents">
 
-                        </div>
+    <nav class="navbar d-lg-none mobile">
+        <a class="navbar-brand" href="#"><img src="https://via.placeholder.com/150x40" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="material-symbols-outlined navbar-toggler-icon">menu</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav primary-links text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                    <div class="additional-links">
+                        <a class="nav-link" href="#">Our Mission</a>
+                        <a class="nav-link" href="#">Our History</a>
+                        <a class="nav-link" href="#">Our Team</a>
+                        <a class="nav-link" href="#">Careers</a>
                     </div>
-                    <div class="break"></div>
-                    <div class="nav-item">
-                        <button class="btn nav-link" type="button">
-                            <span class="material-icons">account_circle</span>
-                        </button>
-                        <div id="contents">
-                            <form class="login-form p-3" id="login-form">
-                                <div class="form-group">
-                                    <label for="username">E-mail</label>
-                                    <input type="text" class="form-control" id="username" placeholder="Enter e-mail">
-                                </div>
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="password"
-                                        placeholder="Enter password">
-                                </div>
-                                <button type="submit" class="btn btn-primary btn-block">Login</button>
-                            </form>
-                        </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cybernetics</a>
+                    <div class="additional-links">
+                        <a class="nav-link" href="#">Oracle Series</a>
+                        <a class="nav-link" href="#">Sentry Series</a>
+                        <a class="nav-link" href="#">Stalker Series</a>
+                        <a class="nav-link" href="#">Doomsayer Series</a>
                     </div>
-                    <div class="nav-item">
-                        <button class="btn nav-link" type="button">
-                            <span class="material-icons">language</span>
-                        </button>
-                        <div id="contents">
-                            <a href="#" class="dropdown-text">English</a>
-                            <a href="#" class="dropdown-text">Polski</a>
-                            <a href="#" class="dropdown-text">Español</a>
-                            <a href="#" class="dropdown-text">Français</a>
-                            <a href="#" class="dropdown-text">Deutsch</a>
-                            <a href="#" class="dropdown-text">中文</a>
-                        </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Optics</a>
+                    <div class="additional-links">
+                        <a class="nav-link" href="#">Glasses</a>
+                        <a class="nav-link" href="#">Contact Lenses</a>
+                        <a class="nav-link" href="#">Custom Lenses</a>
                     </div>
-                </div>
-            </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                    <div class="additional-links">
+                        <a class="nav-link" href="#">Main</a>
+                        <a class="nav-link" href="#">Category 1</a>
+                        <a class="nav-link" href="#">Category 2</a>
+                        <a class="nav-link" href="#">Category 3</a>
+                        <a class="nav-link" href="#">Category 4</a>
+                        <a class="nav-link" href="#">Category 5</a>
+                        <a class="nav-link" href="#">Category 6</a>
+                        <a class="nav-link" href="#">Category 7</a>
+                        <a class="nav-link" href="#">Category 8</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conctact Us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mt-2 secondary-links">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="material-symbols-outlined">help</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="material-symbols-outlined">language</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="material-symbols-outlined">account_circle</span></a>
+                </li>
             </ul>
         </div>
+
     </nav>
 
-    <div id="dropdown-content" class="dropdown-content">
+    <div id="dropdown-content" class="dropdown-content tomorrow-light">
     </div>
 
-    <div class="main-banner tomorrow-black">
-        <h1>See Beyond Tomorrow</h1>
-    </div>
-
-    <div class="product-section cybernetics">
-        <div class="content-top rubik-glitch-regular">
-            <h2>Oracle 3 Pro</h2>
-            <p>~0% latency starting at $12,000</p>
-        </div>
-        <div class="content-bottom">
-            <div class="buttons-bottom">
-                <button class="btn btn-primary btn-lg mx-2">Order now</button>
-                <button class="btn btn-secondary btn-lg mx-2">Learn more</button>
+    <div class="container main">
+        <div class="row">
+            <div class="col-12 main-banner tomorrow-black text-center">
+                <h1 class="display-sm-1 display-md-1 display-lg-1">See Beyond Tomorrow</h1>
             </div>
         </div>
-    </div>
 
-    <div class="product-section glasses tomorrow-bold">
-        <div class="content-top">
-            <h2>Ox™</h2>
-            <p>pairing support starting at $4,500</p>
-        </div>
-        <div class="content-bottom ">
-            <div class="buttons-bottom">
-                <button class="btn btn-primary btn-lg mx-2">Order now</button>
-                <button class="btn btn-secondary btn-lg mx-2">Learn more</button>
+        <div class="row product-section cybernetics">
+            <div class="row head text-center tomorrow-medium">
+                <h2 class="display-sm-2 display-md-2 display-lg-2">Oracle 3 Pro</h2>
+                <p class="lead tomorrow-regular col-12 col-mb-4">~0% latency starting at $12,000</p>
+            </div>
+            <div class="row tail text-center">
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <button class="btn btn-primary btn-lg w-100">Contact Us</button>
+                </div>
+                <div class="col-12 col-md-4">
+                    <button class="btn btn-secondary btn-lg w-100">Learn More</button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="custom-lens-section tomorrow-bold">
-        <div class="content-top">
-            <h2>Custom lens</h2>
-            <p>price is calculated per order</p>
-        </div>
-        <div class="content-bottom">
-            <div class="buttons-bottom">
-                <button class="btn btn-primary btn-lg mx-2">Order now</button>
-                <button class="btn btn-secondary btn-lg mx-2">Learn more</button>
+        <div class="row product-section glasses">
+            <div class="row head text-center tomorrow-medium">
+                <h2 class="display-sm-2 display-md-2 display-lg-2">Ox™</h2>
+                <p class="lead tomorrow-regular col-12 col-mb-4">pairing support starting at $4,500</p>
+            </div>
+            <div class="row tail text-center">
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <button class="btn btn-primary btn-lg w-100">Contact Us</button>
+                </div>
+                <div class="col-12 col-md-4">
+                    <button class="btn btn-secondary btn-lg w-100">Learn More</button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="footer">
-        <div id="map-placeholder">Google Map under construction</div>
-        <div class="legal-text">Legal and contact information</div>
-        <ul class="list-inline footer-links">
-            <li class="list-inline-item"><a href="#">Privacy & legal</a></li>
-            <li class="list-inline-item"><a href="#">Contact</a></li>
-            <li class="list-inline-item"><a href="#">News</a></li>
-            <li class="list-inline-item"><a href="#">Locations</a></li>
-        </ul>
-    </div>
+        <div class="row product-section custom-lens-section">
+            <div class="row head text-center tomorrow-medium">
+                <h2 class="display-sm-2 display-md-2 display-lg-2">Custom lens</h2>
+                <p class="lead tomorrow-regular col-12 col-mb-4">Price is calculated per order</p>
+            </div>
+            <div class="row tail text-center">
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <button class="btn btn-primary btn-lg w-100">Contact Us</button>
+                </div>
+                <div class="col-12 col-md-4">
+                    <button class="btn btn-secondary btn-lg w-100">Learn More</button>
+                </div>
+            </div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <div class="row footer">
+            <div class="row Maps maps-sm maps-md maps-lg text-center">Google Map under construction</div>
+            <div class="container row tail">
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <h5>About Us</h5>
+                        <p>Leading provider of high-tech cybernetics solutions.</p>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <h5>Contact</h5>
+                        <p>Email: support@cybernetics.com</p>
+                        <p>Phone: +1 234 567 890</p>
+                        <p>Address: 1234 Tech St, Innovation City, USA</p>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <h5>Follow Us</h5>
+                        <a href="#" class="text-white mx-2"><img src="https://via.placeholder.com/30"
+                                alt="Facebook"></a>
+                        <a href="#" class="text-white mx-2"><img src="https://via.placeholder.com/30" alt="Twitter"></a>
+                        <a href="#" class="text-white mx-2"><img src="https://via.placeholder.com/30"
+                                alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                            <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+                            <li class="list-inline-item"><a href="#">Support</a></li>
+                            <li class="list-inline-item"><a href="#">FAQ</a></li>
+                        </ul>
+                        <p class="mb-0">&copy; 2024 Europa Optica Inc. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
 
-    <script src="JavaScript/scroll.js"></script>
-    <script src="JavaScript/navbar-desktop.js"></script>
-    <script src="JavaScript/navbar-dropdown-content.js"></script>
-    <script src="JavaScript/navbar-mobile.js"></script>
+
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script src="JavaScript/scroll.js"></script>
+        <script src="JavaScript/navbar-init.js"></script>
+        <script src="JavaScript/navbar-desktop.js"></script>
+        <script src="JavaScript/navbar-mobile.js"></script>
 </body>
 
 </html>
