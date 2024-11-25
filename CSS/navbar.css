@@ -22,6 +22,16 @@
     justify-content: center;
 }
 
+@media (max-width: 1080px) {
+    .navbar-expand-lg {
+        display: none !important;
+    }
+
+    .d-lg-none {
+        display: flex !important;
+    }
+}
+
 /* Desktop */
 
 .desktop {
