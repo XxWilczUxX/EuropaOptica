@@ -19,4 +19,22 @@ document.addEventListener('DOMContentLoaded', function () {
     navbarCollapse.addEventListener('hidden.bs.collapse', function () {
 
     });
+
+
+    const mobileNavItems = navbar.querySelectorAll('.navbar-nav .nav-item');
+    const mobilePrimaryLinks = navbar.querySelector('.primary-links').querySelectorAll('.navbar-nav .nav-item');
+
+    mobilePrimaryLinks.forEach(item => {
+        item.addEventListener('click', function () {
+            // Hide all other additional links
+            mobilePrimaryLinks.forEach(i => {
+                if (i !== item) {
+                    i.classList.toggle('hide');
+                }
+            });
+
+            // Toggle the clicked item
+            item.classList.toggle('active');
+        });
+    });
 });
