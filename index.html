@@ -18,9 +18,9 @@
     <link href="CSS/shared.css" rel="stylesheet">
     <link href="CSS/tomorrow-font.css" rel="stylesheet">
     <link href="CSS/glitch-font.css" rel="stylesheet">
-    <link href="CSS/desktop.css" rel="stylesheet">
-    <link href="CSS/desktop-hover.css" rel="stylesheet">
-    <link href="CSS/mobile.css" rel="stylesheet">
+
+    <link href="CSS/footer.css" rel="stylesheet">
+
 
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -28,6 +28,7 @@
 </head>
 
 <body>
+    <!--  
     <nav id="navbar-desktop" class="navbar navbar-expand-lg navbar-dark  d-none d-lg-block navbar-desktop">
         <div class="container-fluid">
             <a class="navbar-brand logo-size" href="#"><img src="https://via.placeholder.com/150x40" alt="Logo"
@@ -197,7 +198,7 @@
                                 <input type="text" class="form-control" id="search-input" placeholder="Search...">
                             </div>
                             <div id="search-results" class="search-results mt-2">
-                                <!-- Search results will be displayed here -->
+                                
                             </div>
                         </form>
                     </div>
@@ -231,7 +232,7 @@
                             <input type="text" class="form-control" id="search-input" placeholder="Search...">
                         </div>
                         <div id="search-results" class="search-results mt-2">
-                            <!-- Search results will be displayed here -->
+                            
                         </div>
                     </form>
                 </div>
@@ -367,73 +368,112 @@
             </li>
             </ul>
         </div>
-    </nav>
-
+    </nav> 
+ -->
     <div id="dropdown-content" class="dropdown-content">
     </div>
 
-    <div class="main-banner tomorrow-black">
-        <h1>See Beyond Tomorrow</h1>
-    </div>
-
-    <div class="product-section cybernetics">
-        <div class="content-top rubik-glitch-regular">
-            <h2>Oracle 3 Pro</h2>
-            <p>~0% latency starting at $12,000</p>
-        </div>
-        <div class="content-bottom">
-            <div class="buttons-bottom">
-                <button class="btn btn-primary btn-lg mx-2">Order now</button>
-                <button class="btn btn-secondary btn-lg mx-2">Learn more</button>
+    <div class="container main">
+        <div class="row">
+            <div class="col-12 main-banner tomorrow-black text-center">
+                <h1 class="display-sm-1 display-md-1 display-lg-1">See Beyond Tomorrow</h1>
             </div>
         </div>
-    </div>
 
-    <div class="product-section glasses tomorrow-bold">
-        <div class="content-top">
-            <h2>Ox™</h2>
-            <p>pairing support starting at $4,500</p>
-        </div>
-        <div class="content-bottom ">
-            <div class="buttons-bottom">
-                <button class="btn btn-primary btn-lg mx-2">Order now</button>
-                <button class="btn btn-secondary btn-lg mx-2">Learn more</button>
+        <div class="row product-section cybernetics">
+            <div class="row head text-center tomorrow-medium">
+                <h2 class="display-sm-2 display-md-2 display-lg-2">Oracle 3 Pro</h2>
+                <p class="lead tomorrow-regular col-12 col-md-4">~0% latency starting at $12,000</p>
+            </div>
+            <div class="row tail text-center">
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <button class="btn btn-primary btn-lg w-100">Contact Us</button>
+                </div>
+                <div class="col-12 col-md-4">
+                    <button class="btn btn-secondary btn-lg w-100">Learn More</button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="custom-lens-section tomorrow-bold">
-        <div class="content-top">
-            <h2>Custom lens</h2>
-            <p>price is calculated per order</p>
-        </div>
-        <div class="content-bottom">
-            <div class="buttons-bottom">
-                <button class="btn btn-primary btn-lg mx-2">Order now</button>
-                <button class="btn btn-secondary btn-lg mx-2">Learn more</button>
+        <div class="row product-section glasses">
+            <div class="row head text-center tomorrow-medium">
+                <h2 class="display-sm-2 display-md-2 display-lg-2">Ox™</h2>
+                <p class="lead tomorrow-regular col-12 col-md-4">pairing support starting at $4,500</p>
+            </div>
+            <div class="row tail text-center">
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <button class="btn btn-primary btn-lg w-100">Contact Us</button>
+                </div>
+                <div class="col-12 col-md-4">
+                    <button class="btn btn-secondary btn-lg w-100">Learn More</button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="footer">
-        <div id="map-placeholder">Google Map under construction</div>
-        <div class="legal-text">Legal and contact information</div>
-        <ul class="list-inline footer-links">
-            <li class="list-inline-item"><a href="#">Privacy & legal</a></li>
-            <li class="list-inline-item"><a href="#">Contact</a></li>
-            <li class="list-inline-item"><a href="#">News</a></li>
-            <li class="list-inline-item"><a href="#">Locations</a></li>
-        </ul>
-    </div>
+        <div class="row product-section custom-lens-section">
+            <div class="row head text-center tomorrow-medium">
+                <h2 class="display-sm-2 display-md-2 display-lg-2">Custom lens</h2>
+                <p class="lead tomorrow-regular col-12 col-md-4">Price is calculated per order</p>
+            </div>
+            <div class="row tail text-center">
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <button class="btn btn-primary btn-lg w-100">Contact Us</button>
+                </div>
+                <div class="col-12 col-md-4">
+                    <button class="btn btn-secondary btn-lg w-100">Learn More</button>
+                </div>
+            </div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <div class="row footer">
+            <div class="row Maps maps-sm maps-md maps-lg text-center">Google Map under construction</div>
+            <div class="container row tail">
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <h5>About Us</h5>
+                        <p>Leading provider of high-tech cybernetics solutions.</p>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <h5>Contact</h5>
+                        <p>Email: support@cybernetics.com</p>
+                        <p>Phone: +1 234 567 890</p>
+                        <p>Address: 1234 Tech St, Innovation City, USA</p>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <h5>Follow Us</h5>
+                        <a href="#" class="text-white mx-2"><img src="https://via.placeholder.com/30"
+                                alt="Facebook"></a>
+                        <a href="#" class="text-white mx-2"><img src="https://via.placeholder.com/30" alt="Twitter"></a>
+                        <a href="#" class="text-white mx-2"><img src="https://via.placeholder.com/30"
+                                alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                            <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+                            <li class="list-inline-item"><a href="#">Support</a></li>
+                            <li class="list-inline-item"><a href="#">FAQ</a></li>
+                        </ul>
+                        <p class="mb-0">&copy; 2024 Europa Optica Inc. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
 
-    <script src="JavaScript/scroll.js"></script>
-    <script src="JavaScript/navbar-desktop.js"></script>
-    <script src="JavaScript/navbar-dropdown-content.js"></script>
-    <script src="JavaScript/navbar-mobile.js"></script>
+
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script src="JavaScript/scroll.js"></script>
+        <script src="JavaScript/navbar-desktop.js"></script>
+        <script src="JavaScript/navbar-dropdown-content.js"></script>
+        <script src="JavaScript/navbar-mobile.js"></script>
 </body>
 
 </html>
