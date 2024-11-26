@@ -1,8 +1,8 @@
 const mobileNavbarInit = () => {
-    const mobileNavbarHeight = document.querySelector('.mobile').offsetHeight;
     var navbarToggler = document.querySelector('.navbar-toggler');
     var navbarCollapse = document.querySelector('#navbarNav');
     var navbar = document.querySelectorAll('.navbar')[1];
+    const mobileNavbarHeight = navbar.offsetHeight;
 
     console.log(mobileNavbarHeight);
     navbarCollapse.style.minHeight = `calc(100vh - ${mobileNavbarHeight}px)`;
