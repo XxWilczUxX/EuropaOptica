@@ -99,6 +99,7 @@ a {
 .product-section,
 .custom-lens-section {
     margin: 0;
+    overflow-x: hidden;
 }
 
 .main>div>.row {
@@ -165,4 +166,24 @@ a {
         font-size: 3rem;
         -webkit-text-stroke: 0.4px black;
     }
+}
+
+/* Carousel */
+
+.carousel {
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    margin: auto;
+}
+
+.carousel-item .row div img {
+    max-width: 80%;
+    height: auto;
+    margin: auto;
 }

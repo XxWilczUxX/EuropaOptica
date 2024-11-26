@@ -63,7 +63,7 @@
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
 }
 
 .dropdown-content.show {
