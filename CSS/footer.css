@@ -77,11 +77,12 @@
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
     .maps-md {
-        height: 45vh;
+        height: 100vh;
     }
 
     .footer .tail {
-        height: unset;
+        height: 100vh;
+        padding: 2.5vh 0;
     }
 }
 

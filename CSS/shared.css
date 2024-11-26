@@ -104,6 +104,7 @@ a {
 
 .main>div>.row {
     justify-content: center;
+    align-items: center;
     margin-right: 0;
     margin-left: 0;
 }
@@ -132,6 +133,14 @@ a {
         font-size: 3.5rem;
     }
 
+    .display-sm-3 {
+        font-size: 2.5rem;
+    }
+
+    .display-sm-4 {
+        font-size: 1.5rem;
+    }
+
     .lead {
         font-size: 2rem;
         -webkit-text-stroke: 0.5px black;
@@ -145,6 +154,14 @@ a {
 
     .display-md-2 {
         font-size: 5rem;
+    }
+
+    .display-md-3 {
+        font-size: 4rem;
+    }
+
+    .display-md-4 {
+        font-size: 3rem;
     }
 
     .lead {
@@ -162,6 +179,14 @@ a {
         font-size: 6rem;
     }
 
+    .display-lg-3 {
+        font-size: 5rem;
+    }
+
+    .display-lg-4 {
+        font-size: 4rem;
+    }
+
     .lead {
         font-size: 3rem;
         -webkit-text-stroke: 0.4px black;
@@ -170,20 +195,50 @@ a {
 
 /* Carousel */
 
-.carousel {
-    width: 100%;
+.carousel-item {
     height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+    padding: 12.5vh 8vh;
+    padding-top: 16vh;
 }
 
-.carousel-inner {
+.carousel-item img {
+    height: 100%;
+    background-color: gray;
+}
+
+.carousel-item .carousel-caption {
+    color: white;
+    z-index: inherit;
     display: flex;
+    flex-direction: column;
+    justify-self: center;
     align-items: center;
-    height: 80%;
-    margin: auto;
 }
 
-.carousel-item .row div img {
-    max-width: 80%;
-    height: auto;
-    margin: auto;
+.carousel-item .carousel-caption h3 {
+    -webkit-text-stroke: 1.25px black;
+}
+
+.carousel .carousel-control-prev span,
+.carousel .carousel-control-next span {
+    color: black;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+    stroke: white 1px solid;
+}
+
+.carousel .carousel-title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 6vh;
+    z-index: 2;
 }
