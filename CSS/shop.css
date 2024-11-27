@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     padding: 15vh 5vw;
+    padding-bottom: 0;
 }
 
 .search-section>.row {
@@ -23,12 +24,26 @@
 }
 
 .search-results>.row {
-    width: 100%;
-    min-height: 25vh;
     overflow-y: scroll;
 }
 
 .search-results>.row>div .card-img-top {
     height: 27.5vh;
     background-color: #24242424;
+}
+
+@media (max-width: 767.98px) {
+    .search-section {
+        height: 200vh;
+    }
+
+    .search-filters {
+        align-items: flex-start;
+    }
+
+    .search-results {
+        height: 100vh;
+        padding: 10vh 0 0 0;
+        align-self: flex-end;
+    }
 }
