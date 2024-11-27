@@ -1,0 +1,34 @@
+.search-section {
+    max-width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 15vh 5vw;
+}
+
+.search-section>.row {
+    height: 100%;
+}
+
+.search-section .search-bar {
+    height: auto;
+}
+
+.search-filters,
+.search-results {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.search-results>.row {
+    width: 100%;
+    min-height: 25vh;
+    overflow-y: scroll;
+}
+
+.search-results>.row>div .card-img-top {
+    height: 27.5vh;
+    background-color: #24242424;
+}
