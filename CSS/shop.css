@@ -38,7 +38,8 @@
     }
 
     .search-filters {
-        align-items: flex-start;
+        align-items: center;
+
     }
 
     .search-results {
