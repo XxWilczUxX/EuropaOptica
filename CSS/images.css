@@ -1,0 +1,27 @@
+.oracle {
+    background: url(https://i.pinimg.com/736x/e2/98/20/e29820fc44d38e5e29131119c04ec439.jpg) !important;
+    background-size: cover !important;
+    background-position: left !important;
+    color: white !important;
+}
+
+.sentry {
+    background: url(https://i.pinimg.com/736x/48/96/36/48963631fa771e805fe280f44ceaa8a0.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: white !important;
+}
+
+.stalker {
+    background: url(https://i.pinimg.com/736x/bb/28/2d/bb282d74b1089d58388eedd3b9fafad3.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: white !important;
+}
+
+.doomsayer {
+    background: url(https://i.pinimg.com/736x/b8/3e/c8/b83ec8af4fe2ca40b2f6befd14c53a30.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: white !important;
+}
